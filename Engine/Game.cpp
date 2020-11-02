@@ -22,17 +22,16 @@
 #include "Game.h"
 #include "SpriteCodex.h"
 
-Game::Game( MainWindow& wnd )
+Game::Game(MainWindow& wnd)
 	:
-	wnd( wnd ),
-	gfx( wnd ),
+	wnd(wnd),
+	gfx(wnd),
 	brd(gfx),
 	rng(std::random_device()()),
-	snek({2,2}),
-	goal(rng,brd,snek)
-{
+	snek({ 2,2 }),
+	goal(rng, brd, snek)
+{//i donno wat the fuck im doin
 }
-
 void Game::Go()
 {
 	gfx.BeginFrame();	
